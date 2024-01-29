@@ -1,21 +1,15 @@
-# nagad_version_10_without_mehjabin
-# Github: https://github.com/RH-NAYM/nagad_version_10.git
-# HuggingFace : https://huggingface.co/rakib72642/nagad_verson_10
+# nagad_version_11_splitted_model
+# Github: https://github.com/RH-NAYM/nagad_version_11.git
+# HuggingFace : https://huggingface.co/rakib72642/nagad_version_11  
 
-sudo apt install iproute2 && sudo apt install wget && sudo apt install unzip && apt install nvtop && sudo apt-get install git-lfs && apt-get update && apt-get install libgl1
+sudo apt install iproute2 && sudo apt install wget && sudo apt install unzip && apt install nvtop && sudo apt-get install git-lfs && apt-get update && apt-get install libgl1 && sudo apt update && sudo apt upgrade
 
-# git clone https://huggingface.co/rakib72642/nagad_verson_10 && cd nagad_verson_10 && pip install -r requirements.txt
-# or
-# wget "not updated yet" && unzip "not updated yet" && pip install -r requirements.txt
-
-sudo apt update && sudo apt upgrade
-
-python nagad_main_API.py
+# git clone https://huggingface.co/rakib72642/nagad_version_11 && cd nagad_verson_10 && pip install -r requirements.txt && python nagad_main_API.py
 
 
-curl -s https://ngrok-agent.s3.amazonaws.com/ngrok.asc | sudo tee /etc/apt/trusted.gpg.d/ngrok.asc >/dev/null && echo "deb https://ngrok-agent.s3.amazonaws.com buster main" | sudo tee /etc/apt/sources.list.d/ngrok.list && sudo apt update && sudo apt install ngrok
+curl -s https://ngrok-agent.s3.amazonaws.com/ngrok.asc | sudo tee /etc/apt/trusted.gpg.d/ngrok.asc >/dev/null && echo "deb https://ngrok-agent.s3.amazonaws.com buster main" | sudo tee /etc/apt/sources.list.d/ngrok.list && sudo apt update && sudo apt install ngrok && ngrok config add-authtoken 2Qm8hS1zPhVXiLjEdlI4738tLzF_2QJwGJMK5oTbQD33QSVXS
 
-ngrok config add-authtoken 2Qm8hS1zPhVXiLjEdlI4738tLzF_2QJwGJMK5oTbQD33QSVXS && ngrok http --domain=hasb.nagadpulse.com 4444
+ngrok http --domain=hasb.nagadpulse.com 4444
 
 
 
